@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShopBridge.Core.Repository\ShopBridge.Core.Repository.csproj" />
+    <ProjectReference Include="..\ShopBridge.Core.Service\ShopBridge.Core.Service.csproj" />
+  </ItemGroup>
+
+</Project>

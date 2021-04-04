@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ShopBridge.API</name>
+    </assembly>
+    <members>
+        <member name="M:ShopBridge.API.Controllers.Inventory.ProductController.#ctor(ShopBridge.Core.Service.Inventory.IProductService,Microsoft.Extensions.Logging.ILogger{ShopBridge.API.Controllers.Inventory.ProductController})">
+            <summary>
+             Inject the required dependency in the Product Controller
+             So that we use the services as usual
+            </summary>
+            <param name="productService"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:ShopBridge.API.Controllers.Inventory.ProductController.CreateProduct(ShopBridge.Core.Entity.Inventory.Product)">
+            <summary>
+            API End point to create the product detail
+            </summary>
+            <param name="modelEntity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShopBridge.API.Controllers.Inventory.ProductController.GetProducts(System.Int32,System.Int32)">
+            <summary>
+            Get Product Detail by pagging,You need to pass the current page index and record count
+            for this page.
+            currentPage =1, recordCount=10 => means display the total 10 record from page index 1
+            </summary>
+            <param name="currentPage"></param>
+            <param name="recordCount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShopBridge.API.Controllers.Inventory.ProductController.UpdateProduct(ShopBridge.Core.Entity.Inventory.Product)">
+            <summary>
+            Update the Product Detail, Pass the required fields and it will update the Product
+            with provided information
+            </summary>
+            <param name="id"></param>
+            <param name="modelEntity"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShopBridge.API.Controllers.Inventory.ProductController.DeleteProduct(System.Int32)">
+            <summary>
+            Delete the Product Information you need to pass the product ID and based on this ProductId
+            It will delete the Product
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ShopBridge.API.Controllers.Inventory.ProductController.ProductDetailById(System.Int32)">
+            <summary>
+            End point which expose to the single Product
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

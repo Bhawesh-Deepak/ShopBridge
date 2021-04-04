@@ -1,0 +1,7 @@
+{
+  "ProductCreated": "Product created successfully",
+  "ProductUpdated": "Product updated successfully",
+  "ProductDeleted": "Product deleted successfully",
+  "Exception": "Exception has been occured, Please consult admin",
+  "ProductNotFound": "Product not found."
+}
